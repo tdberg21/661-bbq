@@ -1,0 +1,38 @@
+.header-component {
+  border-top: 8px #ef9273 solid;
+  padding: 10px 20px 0 20px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  font-weight: 700;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #0d0d0d;
+}
+
+a:hover {
+  color: #ef9273;
+}
+
+@media screen and (max-width: 501px) {
+  .logo-container {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .logo-container {
+    display: none;
+  }
+}
