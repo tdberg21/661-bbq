@@ -1,13 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './Components/App/App';
+import Ratings from './Components/Ratings/Ratings';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
+render(
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+    <Routes>
+          <Route path='ratings' element={<Ratings />}></Route>
+        </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
