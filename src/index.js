@@ -3,15 +3,11 @@ import { render } from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './Components/App/App';
-import Ratings from './Components/Ratings/Ratings';
 import reportWebVitals from './reportWebVitals';
 
 render(
   <BrowserRouter>
     <App />
-    {/* <Routes> */}
-          {/* <Route path='ratings' element={<Ratings />}></Route> */}
-        {/* </Routes> */}
   </BrowserRouter>,
   document.getElementById('root')
 );

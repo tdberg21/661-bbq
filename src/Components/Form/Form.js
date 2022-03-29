@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
 
 
@@ -8,6 +9,7 @@ class Form extends Component {
   state = {
     mealChoice: '',
     restaurantName: '',
+    location: '',
     dateVisited: '',
     mealRating: '',
     experienceDescription: ''
@@ -41,6 +43,17 @@ class Form extends Component {
             type='text'
             name='restaurantName'
             value={this.state.restaurantName}
+            onChange={this.handleChange}
+          />
+          <label htmlFor='location'>Where is it located?</label>
+          <input
+            id='location'
+            className='location__input'
+            aria-label='Restaurant Location'
+            placeholder='Restaurant Location'
+            type='text'
+            name='location'
+            value={this.state.location}
             onChange={this.handleChange}
           />
           <label htmlFor='date-visited'>When did you eat here?</label>
