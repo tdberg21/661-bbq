@@ -9,9 +9,9 @@ import reportWebVitals from './reportWebVitals';
 render(
   <BrowserRouter>
     <App />
-    <Routes>
-          <Route path='ratings' element={<Ratings />}></Route>
-        </Routes>
+    {/* <Routes> */}
+          {/* <Route path='ratings' element={<Ratings />}></Route> */}
+        {/* </Routes> */}
   </BrowserRouter>,
   document.getElementById('root')
 );

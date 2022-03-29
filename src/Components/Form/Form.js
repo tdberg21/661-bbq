@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 
 class Form extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+  }
   state = {
     mealChoice: '',
     restaurantName: '',
@@ -14,12 +14,18 @@ class Form extends Component {
   }
 
   handleChange = event => {
-    console.log(event.target.value);
     const {name, value} = event.target;
     this.setState({
       [name]: value
     });
   }
+
+  handleSubmit = event => {
+    event.preventDefault();
+    const newRestaurant = {...this.state};
+    console.log(newRestaurant)
+    this.props.addRestaurant(newRestaurant);
+  };
   
   render() { 
     return (
@@ -84,7 +90,7 @@ class Form extends Component {
           <button
             className='submit-button'
             aria-label='Submit Review Button'
-            // onClick={this.handleSubmit}
+            onClick={this.handleSubmit}
           >
           Submit
           </button> 
