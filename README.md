@@ -2,7 +2,7 @@
 
 BBQ Tracker App
 
-An application used to keep track of all the bbq restaurants you have tried around the country and to give them ratings.  Built with React, Redux, JavaScript, and CSS.
+An application used to keep track of all the bbq restaurants you have tried around the country and to give them ratings.  Built with React, JavaScript, and CSS.
 
 ## Project Status
 Work in Progress
