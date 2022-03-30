@@ -1,0 +1,7 @@
+.ratings-container-component {
+  padding-top: 35px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
