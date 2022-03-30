@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Ratings from "../Ratings/Ratings";
+import "./RatingsContainer.css";
 
 class RatingsContainer extends Component {
   restaurantsToDisplay = (restaurants) =>

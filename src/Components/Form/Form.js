@@ -1,5 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
+import bbqPic from "../../assets/bbq-pic.jpeg"
+import "./Form.css";
 
 class Form extends Component {
   constructor(props) {
@@ -30,8 +32,8 @@ class Form extends Component {
   render() {
     return (
       <div className="form-component">
-        <h4>Add new restaurant:</h4>
         <form className="restaurant-form">
+        <h4>Add new restaurant:</h4>
           <label htmlFor="restaurant-name">What BBQ joint did you try?</label>
           <input
             id="restaurant-name"
@@ -48,7 +50,7 @@ class Form extends Component {
             id="location"
             className="location__input"
             aria-label="Restaurant Location"
-            placeholder="Restaurant Location"
+            placeholder="City, State"
             type="text"
             name="location"
             value={this.state.location}
@@ -110,6 +112,7 @@ class Form extends Component {
             Submit
           </button>
         </form>
+        <img src={bbqPic} alt="BBQ Pic"></img>
       </div>
     );
   }
