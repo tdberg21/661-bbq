@@ -1,0 +1,12 @@
+.ratings-card {
+  border: 1px solid #0d0d0d;
+  border-radius: 5px;
+  background-color: white;
+  width: 30%;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.restaurant-bold-text {
+  font-weight: 600;
+}
