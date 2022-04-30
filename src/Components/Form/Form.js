@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
-import bbqPic from "../../assets/bbq-pic.jpeg"
+import bbqPic from "../../assets/bbq-pic.jpeg";
 import "./Form.css";
 
 class Form extends Component {
@@ -33,7 +33,7 @@ class Form extends Component {
     return (
       <div className="form-component">
         <form className="restaurant-form">
-        <h4>Add new restaurant:</h4>
+          <h4>Add new restaurant:</h4>
           <label htmlFor="restaurant-name">What BBQ joint did you try?</label>
           <input
             id="restaurant-name"
