@@ -22,3 +22,30 @@ export const addVisitedRestaurant = async (newRestaurant) => {
   const results = await response.json();
   return await results;
 };
+
+export const loginUser = async (credentials) => {
+  const token = fetch('http://localhost:3000/api/v1/login', {
+   method: 'POST',
+   headers: {
+     'Content-Type': 'application/json'
+   },
+   body: JSON.stringify(credentials)
+ })
+   .then(data => data.json())
+
+   return token;
+}
+
+export const signupUser = async (credentials) => {
+  console.log(credentials)
+  const token = fetch('http://localhost:3000/api/v1/users/new', {
+   method: 'POST',
+   headers: {
+     'Content-Type': 'application/json'
+   },
+   body: JSON.stringify(credentials)
+ })
+   .then(data => data.json())
+
+   return token;
+}

@@ -1,13 +1,13 @@
-import App from "./App";
+import Header from "./Header";
 import { shallow } from "enzyme";
 
-describe("APP TESTS", () => {
+describe("Header Tests", () => {
   it("renders without crashing", () => {
-    shallow(<App />);
+    shallow(<Header />);
   });
 
   it("should match the snapshot", () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<Header />);
 
     expect(wrapper).toMatchSnapshot();
   });

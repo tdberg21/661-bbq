@@ -25,8 +25,23 @@ class Form extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    if(this.state.restaurantName === ''){
+      return
+    }
     const newRestaurant = { ...this.state };
     this.props.addRestaurant(newRestaurant);
+    this.clearInputs();
+  };
+
+  clearInputs = () => {
+    this.setState({
+      mealChoice: "",
+      restaurantName: "",
+      location: "",
+      dateVisited: "",
+      mealRating: "",
+      experienceDescription: "",
+    });
   };
 
   render() {
